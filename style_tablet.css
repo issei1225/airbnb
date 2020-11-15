@@ -1,20 +1,12 @@
-body{
-  margin: 0;
-  box-sizing: border-box;
-}
+@media(min-width:741px) and (max-width:1130px){
 
-/* ｽﾏﾎﾒﾃﾞｨｱ */
-@media(max-width:740px){
-
-  /* header上部 */
-
+  /* header-top */
   header{
     background-image: url(img/aibnb.jpg);
     background-size: cover;
-    height: 240px;
     width: 100%;
-    box-shadow: 0px -90px 40px rgba(0, 0, 0, 0.4) inset;
-    
+    height:100%;
+    box-shadow: 0px -120px 40px rgba(0, 0, 0, 0.4) inset;
   }
   .header-logo{
     padding: 25px 0 0 25px;
@@ -24,370 +16,472 @@ body{
     font-size: 37px;
     position: relative;
   }
-  .header-logo i::after{
-    border-bottom:1.5px solid white;
-    border-right:1.5px solid white ;
-    width: 7px;
-    height: 7px;
-    content: "";
-    position: absolute;
-    top:12px;
-    left: 40px;
-    transform: rotate(46deg);
+  /* header-top */
 
-  }
-  .header-logo i:hover{
-    cursor: pointer;
-  }
-  .logo:hover{
-    cursor: pointer;
-  }
-
-  .header-head{
-    text-align: center;
-    display: flex;
-    color: white;
-    
-  }
-  .header-head h1{
-    font-size: 33px;
-    line-height: 34px;
-    letter-spacing: -0.8;
-    display: inline-block;
-    text-align: left;
-    margin: 90px 20px 0 20px;
   
-  }
-
-  /* header上部   */
-  /* header下部 */
-  section{
-    color: #484848;
-    padding: 10px 25px 0;
-  }
-  .hosting h2{
-    font-size: 18px;
-    padding: 20px 0 10px 0 ;
-    margin: 0;
-  }
-  .location{
-    display: block;
-    width: 98%;
-    height: 25px;
-    margin-bottom: 7px;
-    border-radius: 2px;
-    border: 1px solid #dce0e0;
-    padding: 5px;
-    padding-left: 7px;
-    color: #484848;
-  }
-
-  .menu{
-    display: block;
-    width: 100%;
-    height: 35px;
-    margin-bottom: 7px;
-    border-radius: 2px;
-    border: 1px solid #dce0e0;
-    padding: 5px;
-    color: #484848;
-    -webkit-appearance: none;
-  }
-
-  .menu-people{
-    position: relative;
-  }
-
-  .menu-people::after{
-    position: absolute;
-    z-index: 1;
-    right: 13px;
-    top: 28%;
-    content: "";
-    width: 10px;
-    height: 10px;
-    text-align: center;
-    border-top: 2px solid #666666;
-    border-right: 2px solid #666666;
-    border-radius: 2px;
-    transform: rotate(136deg);
-  }
-
-  .hosting .btn{
-    font-size:17px;
-    font-weight: 800;
-    color: white;
-    background-color: #FF5A5F;
-    border-radius: 5px;
-    height: 50px;
-    border-color: transparent;
-    margin-top: 22px;
-  }
-  .hosting .btn:hover{
-    cursor: pointer;
-  }
-  .hosting .location{
-    font-weight: bold;
-  }
-  /* header下部 */
-  /* なぜAirbnbでホスト？ */
-  .border{
-    border-bottom:1.6px solid #484848;
-    opacity: 0.7;
-    width: 12%;
-    height: 10px;
-    padding-top:65px ;
-    margin: 0 5%;
-  }
-  /* なぜAirbnbでホスト？ */
-  /* 3ステップでホスティング */
-  .title{
-    font-size: 40px;
-    line-height: 40px;
-    color: #484848;
-    margin: 0;
-  }
-  .step h2{
-    margin-top: 0;
-  }
-  .check{
-    margin: 30px 0 10px 0;
-  }
-
-
-
-  .host-link{
-    text-decoration: none;
-    color: #008489;
-  }
-  .host-link:hover{
-    text-decoration:underline;
-  }
-
-  .host-img{
-    width: 100%;
-    margin-top:90px ;
-    vertical-align: top;
-  }
-  .quotation{
-    color:#FDB32B;
-    font-size: 50px;
-    margin: 0;
-    height: 25px;
-    }
-    .host-hoshou{
-      font-size: 17px;
-    }
-    .dennis{
-      font-size: 15px;
-      opacity: 0.8;
-    }
-    .host-btn{
-      background-color: white;
-      border: 2px solid #484848;
-      border-radius: 3px;
-      padding: 7px 30px;
-      font-size: 16px;
-      font-weight: 800;
-      color: #484848;
-    }
-
-    .host-btn:hover{
-      cursor: pointer;
-    }
-    /* 3ステップでホスティング */
-
-
-  /* 万一の時も安心です */
-    .relief p{
-      padding-top: 40px;
-    }
-    .host-list{
-      list-style: none;
-      margin-top: 30px;
-    }
-    .host-list li{
-      padding: 10px 0;
-      position: relative;
-    }
-    .host-list li::before{
-      border-right:1.1px solid #008489;
-      border-bottom: 1.1px solid #008489;
-      height: 18px;
-      width: 5px;
+    .header-logo i::after{
+      border-bottom:1.5px solid white;
+      border-right:1.5px solid white ;
+      width: 7px;
+      height: 7px;
       content: "";
       position: absolute;
-      left: -32px;
-      top: 8px;
-      transform: rotate(45deg);
+      top:12px;
+      left: 40px;
+      transform: rotate(46deg);
+  
     }
-    
-    .relief-img{
-      height: 90vw;
-      width:90vw;
-      object-fit: cover;
-    }
-    .border-new{
-      border:1px solid #484848;
-      opacity: 0.7;
-      width: 12%;
-      height: 1px;
-      margin-top: 80px;
 
-    }
-    /* 万一の時も安心です */
-
-    /* simpleな決済です */
-    .simple h2{
-      padding-top:20px ;
-    }
-    .simple-img{
-      width: 100%;
-      height: 100%;
-      margin-top: 100px;
-      
-    }
-    /* simpleな決済です */
-    
-    /* 夢を共有する仲間が世界中に */
-    .dream h2{
-      font-weight: normal;
-      font-size: 37px;
-      margin: 0;
-      padding: 30px 0 7px 0;
-    }
-    .dream p{
-      margin: 0;
-    }
-    .dream .last-p{
-      padding-bottom: 30px;
-    }
-    /* 夢を共有する仲間が世界中に */
-
-    /* Airbnbについて */
-    .airbnb h2{
-      margin: 0;
-      padding-top: 30px;
-    }
-    /* Airbnbについて */
-
-    /* よくある質問 */
-    .question h1{
-      padding-bottom: 39px;
-    }
-    .question a{
-      border-bottom:1px solid #EBEBEB;
-      display: block;
-      padding: 25px 0;
-    }
-    /* よくある質問 */
-
-    /* ホスティングの詳細はこちら */
-
-    .detail{
-      margin:35px 0 80px 0;
-    }
-    .container{
-      border:1px solid #EBEBEB ;
-      border-radius: 3px;
-      display: flex;
-      margin-bottom: 20px;
-      align-items: center;
-      
-    }
-    .cildcontainer{
-      flex-direction: column;
-      
-      
-    }
-    
-    .container img{
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-      vertical-align: top;
-    }
-    .container h2{
-      font-size: 13px;
-      margin: 0;
-      padding-left: 15px;
-    }
-    .container p{
-      font-size: 13px;
-      padding-left: 15px;
-    }
-    /* ホスティングの詳細はこちら */
-    .money{
-      background-image:url(img/dbe25d99-6821-4e02-802f-fcd7aaef85bc.jpg) ;
-      background-size: cover;
-      height: 375px;
-      background-position:center ;
-    }
-    .money-container h1{
-      color: white;
-      font-size: 40px;
-      margin:40px 0 30px 0;
-      line-height: 40px;
-      
-    }
-    .money-container input{
-      border-radius: 4px;
-      border: 1px solid white;
-      padding: 12px 28px;
-      font-weight: 700;
-      font-size: 15px;
-      color: #484848;
-    }
-    .money-container input:hover{
+    .header-logo i:hover{
       cursor: pointer;
     }
-    footer{
-      margin-top: 60px;
+    .logo:hover{
+      cursor: pointer;
     }
-    .footer-container{
+
+    .header-head{
+      text-align: center;
       display: flex;
-      align-items: center;
-      margin:20px 5% ;
-    }
-    .footer-container i{
-      margin-right:10px ;
-      vertical-align: bottom;
-      font-size: 24px;
-      color: #484848;
-      opacity: 0.8;
-    }
-
-    .footer-contents a{
-      text-decoration: none;
-      font-size: 13px;
-      color: #484848;
-      font-weight: 700;
-      opacity: 0.7;
-      vertical-align: sub;
-      line-height: 0.2;
-    }
-    
-    .footer-contents p{
-      padding: 0;
-      font-size: 13px;
-      color: #484848;
-      font-weight: 700;
-      opacity: 0.7;
-      letter-spacing: -1px;
-      margin: 0;
-    }
-    .footer-icon,.footer-top{
-      display: none;
-    }
-
-    .header-nav,.select-box-desk,.header-head input,.header-head h2{
-      display: none;
-    }
-
+      color: white;
       
+    }
 
-  }
+    .header-head h1{
+      font-size: 39px;
+      line-height: 39px;
+      letter-spacing: -0.8;
+      display: inline-block;
+      text-align: left;
+      margin: 150px 10% 0 10%;
+      padding-bottom: 17px;
+    }
+    .section-head{
+      width: 100%;
+      max-width: 100%;
+    }
+    /* header-bottom */
+    section{
+      color: #484848;
+      padding: 10px ;
+      width: 60%;
+      max-width: 525px;
+      margin: 0 auto;
+    }
+    .hosting{
+      margin: 0 auto !important; 
+      width: 70%;
+      max-width: 700px !important;
+    }
+    .hosting h2{
+      font-size: 17px;
+    }
 
+    .location{
+      display: block;
+      width: 98%;
+      height: 35px;
+      margin-bottom: 7px;
+      border-radius: 2px;
+      border: 1px solid #dce0e0;
+      padding: 5px;
+      padding-left: 7px;
+      color: #484848;
+    }
+    .select-box{
+      display: flex;
+    }
+    .menu{
+      display: block;
+      width: 100%;
+      height: 47px;
+      margin-bottom: 7px;
+      border-radius: 2px;
+      border: 1px solid #dce0e0;
+      padding: 5px;
+      color: #484848;
+      -webkit-appearance: none;
+    }
 
+    .maru{
+      flex: 2;
+    }
+    .gest{
+      flex: 1;
+      padding-left: 10px;
+    }
+    .menu-people{
+      position: relative;
+    }
+  
+    .menu-people::after{
+      position: absolute;
+      z-index: 1;
+      right: 13px;
+      top: 28%;
+      content: "";
+      width: 10px;
+      height: 10px;
+      text-align: center;
+      border-top: 2px solid #666666;
+      border-right: 2px solid #666666;
+      border-radius: 2px;
+      transform: rotate(136deg);
+    } 
 
+    .hosting .btn{
+      font-size:17px;
+      font-weight: 800;
+      color: white;
+      background-color: #FF5A5F;
+      border-radius: 5px;
+      height: 50px;
+      border-color: transparent;
+      margin-top: 22px;
+    }
 
+    .border{
+      border-bottom:1.6px solid #484848;
+      height: 1px;
+      opacity: 0.7;
+      width: 60px;
+      margin: 90px auto 0;
+    }
+    /* header-bottom */
+    .title{
+      font-size: 38px;
+      line-height: 38px;
+      color: #484848;
+      margin: 0;
+      text-align: center;
+      padding-top:10px ;
+    }
+    .fa-check-circle{
+      font-size: 45px;
+      padding-top: 40px;
+    }
+    .step h2{
+      margin-top: 20px;
+    }
+    .step p{
+      font-size: 16px;
+    }
+    .host-link{
+      text-decoration: none;
+      color: #008489;
+      display: block;
+      margin: 25px 0;
+    }
+    .host-link:hover{
+      text-decoration: underline;
+    }
+    .host-contents{
+      display: flex;
+      flex-direction: row-reverse;
+      margin-top: 100px;
+      max-width: 650px ;
+      width: 650px;
+    }
+    .host-img{
+      width: 50%;
+      height: 50%;
+      padding-left: 25px;
+    }
+
+    .quotation{
+      color:#FDB32B;
+      font-size: 50px;
+      margin: 0;
+      height: 15px;
+      padding-bottom: 10px;
+      }
+      .host-hoshou{
+        font-size: 19px;
+      }
+      .dennis{
+        font-size: 15px;
+        opacity: 0.8;
+        line-height: 17px;
+      }
+      .host-btn{
+        background-color: white;
+        border: 2px solid #484848;
+        border-radius: 3px;
+        padding: 7px 30px;
+        font-size: 16px;
+        font-weight: 800;
+        color: #484848;
+      }
+      .host-btn{
+        cursor: pointer;
+      }
+
+      /* 万一の時も安心です */
+
+      .relief{
+        max-width: 650px;
+        width: 650px;
+      }
+      .relief p{
+        padding-top: 40px;
+      }
+      .host-list{
+        list-style: none;
+        margin-top: 30px;
+      }
+      .host-list li{
+        padding: 10px 0;
+        position: relative;
+      }
+      .host-list li::before{
+        border-right:1.1px solid #008489;
+        border-bottom: 1.1px solid #008489;
+        height: 18px;
+        width: 5px;
+        content: "";
+        position: absolute;
+        left: -32px;
+        top: 8px;
+        transform: rotate(45deg);
+      }
+      .relief-img{
+        max-width:650px;
+        width: 650px;
+        margin-top: 70px;
+      }
+      .border-new{
+        border:1px solid #484848;
+        opacity: 0.7;
+        width: 12%;
+        height: 1px;
+        margin: 90px auto 0;
+      }
+      /* 万一の時も安心です */
+
+      /* simpleな経済 */
+      .simple h2{
+        padding-top:20px ;
+      }
+      .simple-contents{
+        display: flex;
+        margin-top: 100px;
+        max-width: 650px ;
+        width: 650px;
+        align-items: center;
+      }
+      .simple-img{
+        width: 50%;
+        height: 50%;
+        padding-right: 40px;
+      }
+      /* 夢を共有する仲間が世界中に */
+      .dream{
+        max-width: 650px;
+        width: 650px;
+      }
+      .dream-contents{
+          display: flex;
+          max-width: 650px;
+          width: 650px;
+          justify-content: center;
+
+        }
+        .dream-text{
+          text-align: center;
+          width: 200px;
+        }
+        .text3{
+          padding: 0 20px;
+        }
+        .dream h2{
+          font-weight: normal;
+          font-size: 37px;
+          margin: 0;
+          padding: 30px 0 7px 0;
+        }
+        /* 夢を共有する仲間が世界中に */
+        /* Airbnbについて   */
+        .airbnb h2{
+          margin: 0;
+          padding-top: 30px;
+        }
+        /* Airbnbについて   */
+        /* よくある質問 */
+        .question{
+          max-width: 650px;
+          width: 650px;
+        }
+        .question h1{
+          padding-bottom: 39px;
+        }
+
+        .question a{
+          border-bottom:1px solid #EBEBEB;
+          display: block;
+          padding: 10px 0;
+        }
+        /* よくある質問 */
+        /* ホスティングの詳細はこちら */
+        .detail{
+          max-width:650px;
+          width: 650px;
+        }
+        .master-container{
+          display: flex;
+        }
+        .container{
+          border: 1px solid #dce0e0;
+          border-radius: 3px;
+          height: 100%;
+          box-shadow: 0px 3px 4px rgba(0, 0,0, 0.1);
+        }
+        .container:hover{
+          cursor: pointer;
+        }
+        .container img{
+          width: 200px;
+          height: 100px;
+          object-fit: cover;
+        }
+        .container h2{
+          font-size: 15px;
+          margin: 0;
+          padding-left: 15px;
+        }
+        .container p{
+          font-size: 15px;
+          margin: 0;
+          padding-left: 15px;
+        }
+        .conteiner2{
+          margin: 0px 20px;
+        }
+        /* 収入を増やしたい？ */
+        .money{
+          background-image:url(img/dbe25d99-6821-4e02-802f-fcd7aaef85bc.jpg) ;
+          background-size: cover;
+          height: 420px;
+          background-position: center;
+          margin-top: 70px;
+          max-width: 100%;
+          width: 100%;
+        }
+        .money-container{
+          margin: 80px 0 0 200px;
+        }
+        .money-container h1{
+          color: white;
+          font-size: 40px;
+          margin:40px 0 30px 0;
+          line-height: 40px;
+          
+        }
+
+        .money-container input{
+          border-radius: 4px;
+          border: 1px solid white;
+          padding: 12px 28px;
+          font-weight: 700;
+          font-size: 15px;
+          color: #484848;
+        }
+        .money-container input:hover{
+          cursor: pointer;
+        }
+        /* 収入を増やしたい？ */
+        .footer{
+          margin:70px 5% 0 5%;
+          max-width: 80%;
+        }
+        .footer-top{
+          margin:70px 5% 0 5%;
+          max-width: 80%;
+          display: flex;
+          justify-content: space-between;
+        }
+        .footer-menu{
+          margin: 0 5px;
+          min-width: 170px;
+          width: 100%;
+        }
+
+        .footer-menu a{
+          display: block;
+          font-size:14px;
+          text-decoration: none;
+          color: #484848;
+          font-weight: 700;
+          opacity: 0.8;
+        }
+        .footer-menu a:hover{
+          text-decoration: underline;
+
+        }
+        .footer-menu h1{
+          font-size:14px;
+          opacity: 0.8;
+        }
+        .new-list::after{
+          content: "新着";
+          font-size: 11px;
+          color: white;
+          background-color: teal;
+          border: 1px solid #484848;
+          border-radius: 4px;
+          padding: 0 3px;
+          margin-left: 5px;
+        }
+        .footer-top{
+          margin-bottom: 30px;
+        }
+        .footer-form{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-top:1px solid #dce0e0;
+          height: 100px;
+
+        }
+        .footer-last{
+          display: flex;
+          align-items: center;
+          margin:20px 5% ;
+        }
+        .footer-icon i{
+          font-size: 20px;
+          color: #484848;
+          opacity: 0.8;
+          margin: 0 20px 30px 0;
+        }
+        .footer-icon i:hover{
+          cursor: pointer;
+        }
+        .footer-last i{
+          margin-right:10px ;
+          vertical-align: bottom;
+          font-size: 20px;
+          color: #484848;
+          opacity: 0.8;
+        }
+        .footer-contents a{
+          text-decoration: none;
+          font-size: 13px;
+          color: #484848;
+          font-weight: 700;
+          opacity: 0.7;
+          vertical-align: sub;
+          line-height: 0.2;
+        }
+        .footer-contents p{
+          padding: 0;
+          font-size: 13px;
+          color: #484848;
+          font-weight: 700;
+          opacity: 0.7;
+          letter-spacing: -1px;
+          margin: 0;
+        }
+        .header-nav,.select-box-desk,.header-head input,.header-head h2{
+          display: none;
+        }
+
+}
